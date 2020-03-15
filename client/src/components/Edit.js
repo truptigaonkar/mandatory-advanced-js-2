@@ -21,7 +21,7 @@ class Edit extends Component {
   // Fetching previous data correspond to respective id, after clicking edit button
   componentDidMount() {
     const { id } = this.props.match.params;
-    fetch(`http://localhost:8000/movies/${id}`)
+    fetch(`http://localhost:5000/movies/${id}`)
       .then((response) => response.json())
       .then((movieData) => this.setState({ movieData }));
   }
@@ -39,7 +39,7 @@ class Edit extends Component {
 
     // ----- 1st way: Editing movie using axios  --------//
     const { id } = this.props.match.params;
-    axios.put(`http://localhost:8000/movies/${id}`, this.state.movieData)
+    axios.put(`http://localhost:5000/movies/${id}`, this.state.movieData)
       .then((response) => {
         this.props.history.push("/");
       })
@@ -50,7 +50,7 @@ class Edit extends Component {
     return; // avoid below code
 
     // ----- 2nd way: Editing movie using fetch  --------//
-    fetch(`http://localhost:8000/movies/${id}`,
+    fetch(`http://localhost:5000/movies/${id}`,
       {
         method: "PUT",
         headers: { Accept: "application/json", "Content-Type": "application/json" },

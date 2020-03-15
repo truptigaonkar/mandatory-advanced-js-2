@@ -15,7 +15,7 @@ class Details extends Component {
         this.source = axios.CancelToken.source();
         const { id } = this.props.match.params;
 
-        axios.get(`http://localhost:8000/movies/${id}`, {
+        axios.get(`http://localhost:5000/movies/${id}`, {
             cancelToken: this.source.token
         })
             .then((response) => {

@@ -26,7 +26,7 @@ class Add extends Component {
     //axios.post("http://ec2-13-53-132-57.eu-north-1.compute.amazonaws.com:3000/movies/", movieData) 
 
     // ----- 2nd way: Adding movie using fetch. Reference: https://stackoverflow.com/questions/44121069/how-to-pass-params-with-history-push-link-redirect-in-react-router-v4?noredirect=1    -----//
-    fetch("http://localhost:8000/movies",
+    fetch("http://localhost:5000/movies",
       {
         method: "POST",
         headers: { Accept: "application/json", "Content-Type": "application/json" },

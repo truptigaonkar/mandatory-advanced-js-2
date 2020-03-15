@@ -20,7 +20,7 @@ class Home extends Component {
     componentWillMount() {
         this.source = axios.CancelToken.source();
 
-        axios.get('http://localhost:8000/movies',
+        axios.get('http://localhost:5000/movies',
             { cancelToken: this.source.token })
             .then(response => {
                 /* // Other way
@@ -53,7 +53,7 @@ class Home extends Component {
 
     // Delete function
     handleDelete(id) { // <-- declare id parameter
-        axios.delete(`http://localhost:8000/movies/${id}`) // <-- remove ;
+        axios.delete(`http://localhost:5000/movies/${id}`) // <-- remove ;
             .then(res => {
                 const latestState = [...this.state.movies]; // latest added movies
                 const movieCheck = (movie) => id !== movie.id;
