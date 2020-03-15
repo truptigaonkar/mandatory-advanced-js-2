@@ -1,0 +1,60 @@
+.App{
+  text-align: center; 
+}
+*{
+  font-family: 'Abril Fatface', cursive; 
+}
+
+body{
+  
+  background: no-repeat center center fixed;
+  background-image: url(./image1.jpg);
+  background-size: cover;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: left;
+  margin: 0 auto;
+}
+
+th, td {
+  width: 250px;
+}
+
+/* Hiding successMessage */
+/* @keyframes fadeOut {
+  0% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+  }
+}  */
+
+.successMessage, .validationMessage{
+  /* animation: fadeOut 1s ease-in-out 3s forwards;  */
+  color:red;
+  background-color:lightgreen;
+  margin-bottom:15px;
+}
+Label, Col{
+  text-align: left;
+}
+Form{
+  text-align: left;
+}
+.mainDiv{
+  display:flex;
+  justify-content: center;
+}
+/* .navbarBack{
+  background-image: url(./image3.jpg);
+} */
+
+Link { 
+  cursor: default;
+}
+
+
+
