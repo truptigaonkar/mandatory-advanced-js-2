@@ -1,4 +1,12 @@
 ## Movies CRUD - Advanced JavaScript with React - [Live Demo]( http://truptigaonkar.github.io/mandatory-advanced-js2/)
+
+<p align="center"> 
+<img width="600" height="250" alt="1  Home" src="https://user-images.githubusercontent.com/14937374/77683118-3c8ff180-6f98-11ea-9a6f-172d9205824c.png">
+<img width="300" height="250"" alt="2  Add" src="https://user-images.githubusercontent.com/14937374/77683124-3ef24b80-6f98-11ea-91b7-a7e8e9c6afeb.png">
+<img width="300" height="250" alt="3  Edit" src="https://user-images.githubusercontent.com/14937374/77683126-3f8ae200-6f98-11ea-94f1-fc7d99db947e.png">
+</p>
+
+
 #### Technologies
 
 * Node
