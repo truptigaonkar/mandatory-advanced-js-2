@@ -1,6 +1,6 @@
 ## Movies CRUD - Advanced JavaScript with React - [Live Demo]( http://truptigaonkar.github.io/mandatory-advanced-js2/)
 
-![mandatory-advanced-js-2](https://user-images.githubusercontent.com/14937374/79670100-dc6c2400-81c0-11ea-8777-81b272ea8fb5.gif)
+<img width="600" src="https://user-images.githubusercontent.com/14937374/79670100-dc6c2400-81c0-11ea-8777-81b272ea8fb5.gif">
 
 #### Technologies
 
