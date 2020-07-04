@@ -1,11 +1,16 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
+import './App.css'
+import Home from './components/Home';
 
 function App() {
   return (
+    <Router>
     <div className="App">
-      <h4>Client-hook-typescript</h4>
+      <Link to="/">Home</Link>
+      <Route exact path="/" component={Home}/>
     </div>
+    </Router>
   );
 }
 
