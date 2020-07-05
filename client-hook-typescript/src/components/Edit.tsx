@@ -28,7 +28,7 @@ const Edit = () => {
         });
     }, [id]);
 
-    const handleEdit = (e) =>{
+    const handleEdit = (e: React.FormEvent<HTMLFormElement>) =>{
         e.preventDefault()
 
         axios.put(`http://localhost:5000/movies/${id}`,  { title, description, director, rating })

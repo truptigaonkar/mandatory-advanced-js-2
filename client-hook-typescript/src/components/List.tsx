@@ -2,15 +2,15 @@ import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
 import axios from 'axios'
 
-function List(props) {
+function List(props:any) {
     const {movies, setMovies} = props
     const [error, setError] = useState(false)
 
-    const handleDelete = (id) =>{
+    const handleDelete = (id:any) =>{
         axios.delete(`http://localhost:5000/movies/${id}`) 
             .then(res => {
                 const latestState = [...movies]; // latest added movies
-                const movieCheck = (movie) => id !== movie.id;
+                const movieCheck = (movie: any) => id !== movie.id;
                 setMovies(latestState.filter(movieCheck))
             })
             .catch((err) => {
@@ -33,7 +33,7 @@ function List(props) {
                     </tr>
                 </thead>
                 <tbody>
-                {movies.map((movie) =>(
+                {movies.map((movie:any) =>(
                     <tr key={movie.id}>
                         <td>{movie.id}</td>
                         <td>{movie.title}</td>

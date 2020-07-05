@@ -3,9 +3,9 @@ import axios from 'axios'
 import List from './List'
 
 const Home = () => {
-    const [movies, setMovies] = useState([])
-    const [load, setLoad] = useState(false)
-    const [error, setError] = useState(false)
+    const [movies, setMovies] = useState([] as any)
+    const [load, setLoad] = useState(false as any)
+    const [error, setError] = useState(false as any)
 
     useEffect(() => {
         axios

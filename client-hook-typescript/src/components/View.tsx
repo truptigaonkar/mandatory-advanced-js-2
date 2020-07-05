@@ -2,10 +2,10 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios'
 import {useParams} from 'react-router-dom'
 
-const View = props => {
-    const [movie, setMovie] = useState('')
-    const [load, setLoad] = useState(false)
-    const [error, setError] = useState(false)
+const View = (props:any) => {
+    const [movie, setMovie] = useState('' as any)
+    const [load, setLoad] = useState(false as any)
+    const [error, setError] = useState(false as any)
     const {id} = useParams()
 
     useEffect(() => {
