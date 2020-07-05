@@ -30,7 +30,7 @@ const Add = props => {
 
         axios.post('http://localhost:5000/movies', { title, description, director, rating })
             .then((res) => {
-                console.log(res.data);
+                //console.log(res.data);
                 setToHome(true)
             })
             .catch((err) => {

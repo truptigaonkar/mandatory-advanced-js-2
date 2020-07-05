@@ -1,4 +1,5 @@
-import React from 'react';
+import React from 'react'
+import {Link} from 'react-router-dom'
 
 function List(props) {
     const {movies, setMovies} = props
@@ -38,7 +39,11 @@ function List(props) {
                         <td>{movie.director}</td>
                         <td>{movie.rating}</td>
                         {/* <td><button onClick={() => handleDelete(movie.id)}>Delete</button></td> */}
-                        <td><button onClick={() => handleDelete(index)}>Delete</button></td>
+                        <td>
+                            <button><Link to={`/view/${movie.id}`}>View</Link></button>
+                            <button onClick={() => handleDelete(index)}>Delete</button>
+                            <button><Link to={`/edit/${movie.id}`}>Edit</Link></button>
+                        </td>
                     </tr> 
                 ))} 
                 </tbody>
