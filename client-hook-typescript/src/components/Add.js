@@ -42,7 +42,7 @@ const Add = props => {
         <div>
             <h4>Add</h4>
             {toHome ? <Redirect to="/" /> : null}
-            {error && <div>Please fill in all the fields - <b>{error}</b></div>}
+            {error && <div>ADD: Please fill in all the fields - <b>{error}</b></div>}
             <form onSubmit={handleAdd}>
                 <input type="text" placeholder="Title" value={title} onChange={(e) => setTitle(e.target.value)}/>
                 <input type="text" placeholder="Description" value={description} onChange={(e) => setDescription(e.target.value)}/>

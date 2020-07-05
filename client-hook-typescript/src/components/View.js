@@ -26,7 +26,7 @@ const View = props => {
         <div>
             <h4>View Movie</h4>
             {!load && <div>loading.....</div>}
-            {error && <div>Something went wrong - <b>{error}</b></div>}
+            {error && <div>VIEW: Something went wrong - <b>{error}</b></div>}
             <li>{movie.id}</li>
             <li>{movie.title}</li>
             <li>{movie.description}</li>

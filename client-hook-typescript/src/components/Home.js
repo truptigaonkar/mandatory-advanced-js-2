@@ -25,7 +25,7 @@ const Home = () => {
         <div>
             <h4>Movies List</h4>
             {!load && <div>loading.....</div>}
-            {error && <div>Something went wrong - <b>{error}</b></div>}
+            {error && <div>LIST: Something went wrong - <b>{error}</b></div>}
             <List movies={movies} setMovies={setMovies}/>
         </div>
     )
