@@ -15,9 +15,23 @@
   $ npm install
   $ npm start
 ```
+## Backend start
+
+```bash
+C:\myprojects\mandatory-advanced-js-2>npm install
+C:\myprojects\mandatory-advanced-js-2>npm start server.js
+```
+
+## Frontend start
+
+```bash
+C:\myprojects\mandatory-advanced-js-2\client-hook-typescript>npm install
+C:\myprojects\mandatory-advanced-js-2\client-hook-typescript>npm start
+```
+
 ### Instructions
 * Create a movie directory application which is written as a Single Page Application (SPA) using React and communicates with a JSON REST API is available at
-http://ec2-13-53-132-57.eu-north-1.compute.amazonaws.com:3000/
+server.js 
 * The API is used to add, remove, edit and list movie objects. A movie object has the following structure:
 ```
 {
@@ -104,5 +118,19 @@ rating .
 * Use the react-helmet library to dynamically change the title. 
 * Try to break the application into smaller, simple parts
 * Implement every page as a small application with its own state
+
+## Backend start
+
+```bash
+C:\myprojects\mandatory-advanced-js-2>npm install
+C:\myprojects\mandatory-advanced-js-2>npm start server.js
+```
+
+## Frontend start
+
+```bash
+C:\myprojects\mandatory-advanced-js-2\client-hook-typescript>npm install
+C:\myprojects\mandatory-advanced-js-2\client-hook-typescript>npm start
+```
 
 
